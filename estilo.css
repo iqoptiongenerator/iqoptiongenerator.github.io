@@ -17,14 +17,14 @@ a {
 #index {
     margin-left: auto;
     margin-right: auto;
-    width: 90%;
+    width: 50%;
 
     /*border: solid 1px gray; /*temporario*/
 }
 
 main {
-    margin-left: 5%;
-    margin-right: 5%;
+    margin-left: 10%;
+    margin-right: 10%;
     margin-bottom: 10%;
 }
 
