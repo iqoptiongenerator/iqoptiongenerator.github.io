@@ -1,0 +1,391 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Gerador Especialista</title>
+    <link href="estilo.css" rel="stylesheet" type="text/css">
+    <link href="imagens/favicon.png" rel="shortcut icon" type="image/x-icon"/>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="manage.js" type="text/javascript"></script>
+</head>
+<body onload="start()">
+<div id="capa">
+    <div id="index">
+        <img id="produto_img" src="imagens/produto.png" alt="produto">
+        <header>
+            <h1>ChatBot Especializado Em Gerar e Enviar Sinais Com Alta Precisão</h1>
+            <p id="descricao">O Gerador Especialista é um Bot do Telegram, que faz <u>análises de entradas precisas</u>
+                com <u>filtro de notícias</u>, <u>tendências</u> e <u>cálculos statistics</u> de maneira que as entradas
+                enviadas sejam as <u>mais assertivas</u> possíveis no contexto da sua <u>inteligência artificial</u> em
+                relação ao mercado financeiro.</p>
+            <a href="#feedback"><span id ="classificacao"></span></a>
+            <span id="n_buy"></span>
+            <p>Criado por LoneSoft</p>
+            <p id="att">✓ Última atualização em</p>
+            <p>♖ Português</p>
+            <p>▷ Produto vitalício</p>
+            <p>R$ 299,99</p>
+            <h3 id="desconto">
+                Desconto de 80% até
+                <span id="hr_load"></span>
+                <span id="hr_current"></span>
+            </h3>
+            <h1 id="price">R$</h1>
+            <a href="https://mpago.la/2rHpWne"><div id="comprar">Comprar agora</div></a>
+        </header>
+    </div>
+</div>
+
+<main>
+    <h1>Ferramentas do Robô</h1>
+    <div class="rectangle">
+        <ul class="checklist">
+            <li>Gerar sinais</li>
+            <li>Mercado normal</li>
+            <li>Mercado OTC</li>
+            <li>Escolha de ativos</li>
+            <li>Escolha de período de tempo</li>
+            <li>BackTests</li>
+            <li>Direção de velas</li>
+            <li>Timeframes M1 M5 M15 e M30</li>
+            <li>Porcentagem de assertividade</li>
+            <li>Notícias</li>
+            <li>Tendências</li>
+            <li>CheckWin</li>
+            <li>Algoritmo inteligente</li>
+            <li>Sinais 24h por dia</li>
+        </ul>
+    </div>
+
+    <h1>Requisitos</h1>
+    <div class="rectangle">
+        <ul>
+            <li>Acesso à internet e Telegram</li>
+            <li>Conta na IQ Option</li>
+            <li>Não é necessário conhecimento prévio em análise probabilistic</li>
+        </ul>
+    </div>
+    <h1>Descrição</h1>
+    Independente do robô começar pela sigla IQ, lucre no mercado de opções binárias,
+    através das plataformas IQ Option, Binomo, Olymp Trade e entre outras
+    existentes no mercado; apenas gerando os seus sinais conforme os
+    seus parâmetros e/ou recebendo sinais calculados pelo algoritmo inteligente do robô.
+    Ele foi desenvolvido há pouco tempo com as melhores tecnologias da atualidade, de modo a gerar renda
+    recorrente para aos utilizadores.
+    Sejam bem vindos ao melhor robô chatbot moderno da internet.
+
+    <h1 id="feedback">Feedback dos clientes</h1>
+    <div id="bloco_avaliativo">
+        <div id="bloco">
+            <h1>4,2</h1>
+            <p>★★★★☆</p>
+            <span>Avaliação do Robô</span>
+        </div>
+
+        <table>
+            <tr>
+                <td class="star" id="s5">
+                    <div class="bar">
+                        <div class="bar" id="f5"></div>
+                    </div>
+                </td>
+                <td class="n_star">★★★★★<span class="p">&nbsp;68%</span></td>
+            </tr>
+
+            <tr>
+                <td class="star" id="s4">
+                    <div class="bar">
+                        <div class="bar" id="f4"></div>
+                    </div>
+                </td>
+                <td class="n_star">★★★★☆<span class="p">&nbsp;24%</span></td>
+            </tr>
+
+            <tr>
+                <td class="star" id="s3">
+                    <div class="bar">
+                        <div class="bar" id="f3"></div>
+                    </div>
+                </td>
+                <td class="n_star">★★★☆☆<span class="p">&nbsp;6%</span></td>
+            </tr>
+
+            <tr>
+                <td class="star" id="s2">
+                    <div class="bar">
+                        <div class="bar" id="f2"></div>
+                    </div>
+                </td>
+                <td class="n_star">★★☆☆☆<span class="p">&nbsp;1%</span></td>
+            </tr>
+
+            <tr>
+                <td class="star" id="s1">
+                    <div class="bar">
+                        <div class="bar" id="f1"></div>
+                    </div>
+                </td>
+                <td class="n_star">★☆☆☆☆<span class="p">&nbsp;1%</span></td>
+            </tr>
+        </table>
+    </div>
+
+    <h1>Avaliações</h1>
+    <div class="perfil">
+        <div class="perpro" id="user1"></div>
+    </div>
+    <div class="avaliation">
+        <h5>Diego Carvalho</h5>
+        <p class="n_star">★★★★★ <span class="tmp">&nbsp;há 6 horas</span></p>
+        <p class="comentario">
+            Robô completo por um preço acessível,
+            não pude perder a essas oportunidades q a equipe estão dando no preço. Recomendo
+        </p>
+        <p class="util" id="p1">Essa avaliação foi útil?</p>
+        <ul class="like">
+            <a href="#"><li class="pos" id="ps1" onclick="checked('#p1',1)">pos</li></a>
+            <a href="#"><li class="neg" id="ng-1" onclick="checked('#p1',-1)">neg</li></a>
+        </ul>
+        <hr>
+    </div>
+
+    <div class="perfil">
+        <div><p>RP</p></div>
+    </div>
+    <div class="avaliation">
+        <h5>Rodrigo Pereira</h5>
+        <p class="n_star">★★★★★ <span class="tmp">&nbsp;há 7 horas</span></p>
+        <p class="comentario">
+            bot muito bom, onde demorei um pouco pra aprender mas pude ganhar muita grana
+            em pouco tempo. Ainda bem q pude comprar o robô antes do desconto de ontem acabar.
+            Tava um pouco mais caro, mas tudo bem, valeu a pena.
+        </p>
+        <p class="util" id="p2">Essa avaliação foi útil?</p>
+        <ul class="like">
+            <a href="#"><li class="pos" id="ps2" onclick="checked('#p2',2)">pos</li></a>
+            <a href="#"><li class="neg" id="ng-2" onclick="checked('#p2',-2)">neg</li></a>
+        </ul>
+        <hr>
+    </div>
+
+    <div class="perfil">
+        <div><p>LB</p></div>
+    </div>
+    <div class="avaliation">
+        <h5>Leo Byrro</h5>
+        <p class="n_star">★★★★☆ <span class="tmp">&nbsp;há 10 horas</span></p>
+        <p class="comentario">
+            Tem bons sinais e são assertivos.
+            Mas, senti falta dos horários de volatividade.
+            Espero ganhar mais do que já estou ganhando.
+        </p>
+        <p class="util" id="p3">Essa avaliação foi útil?</p>
+        <ul class="like">
+            <a href="#"><li class="pos" id="ps3" onclick="checked('#p3',3)">pos</li></a>
+            <a href="#"><li class="neg" id="ng-3" onclick="checked('#p3',-3)">neg</li></a>
+        </ul>
+        <hr>
+    </div>
+
+    <div class="perfil">
+        <div><p>AC</p></div>
+    </div>
+    <div class="avaliation">
+        <h5>Arthur Cunha</h5>
+        <p class="n_star">★★★★★ <span class="tmp">&nbsp;há 12 horas</span></p>
+        <p class="comentario">
+            O robô é completo, gostei de tudo, mesmo sendo iniciante,
+            consegui entender os princípios das análises e como desenvolver minhas
+            próprias estrátegias.
+        </p>
+        <p class="util" id="p4">Essa avaliação foi útil?</p>
+        <ul class="like">
+            <a href="#"><li class="pos" id="ps4" onclick="checked('#p4',4)">pos</li></a>
+            <a href="#"><li class="neg" id="ng-4" onclick="checked('#p4',-4)">neg</li></a>
+        </ul>
+        <hr>
+    </div>
+
+    <div class="perfil">
+        <div><p>LA</p></div>
+    </div>
+    <div class="avaliation">
+        <h5>Lucas Araripe</h5>
+        <p class="n_star">★★★★★ <span class="tmp">&nbsp;há 12 horas</span></p>
+        <p class="comentario">
+            Consegui me tornar trader lucrativo com apenas 2 meses operando
+            e sem cursar faculdade. O bot atualizado foram essenciais para que a
+            minha rentabilidade fosse bem otimizada !
+        </p>
+        <p class="util" id="p5">Essa avaliação foi útil?</p>
+        <ul class="like">
+            <a href="#"><li class="pos" id="ps5" onclick="checked('#p5',5)">pos</li></a>
+            <a href="#"><li class="neg" id="ng-5" onclick="checked('#p5',-5)">neg</li></a>
+        </ul>
+        <hr>
+    </div>
+
+    <div class="perfil">
+        <div class="perpro" id="user6"></div>
+    </div>
+    <div class="avaliation">
+        <h5>Marcelo Luiz</h5>
+        <p class="n_star">★★★★★ <span class="tmp">&nbsp;há 14 horas</span></p>
+        <p class="comentario">
+            bot procurou reunir tudo o q há, em se tratando de estrátegias.
+            Em comparação com outros bots que testei,
+            por exemplo, este é o completo.
+        </p>
+        <p class="util" id="p6">Essa avaliação foi útil?</p>
+        <ul class="like">
+            <a href="#"><li class="pos" id="ps6" onclick="checked('#p6',6)">pos</li></a>
+            <a href="#"><li class="neg" id="ng-6" onclick="checked('#p6',-6)">neg</li></a>
+        </ul>
+        <hr>
+    </div>
+
+    <div class="perfil">
+        <div><p>LF</p></div>
+    </div>
+    <div class="avaliation">
+        <h5>Luiz Flávio</h5>
+        <p class="n_star">★★★★★ <span class="tmp">&nbsp;há 15 horas</span></p>
+        <p class="comentario">
+            Recomendo muito a quem quer começar a
+            ter uma rentabilidade, pegando só os sinais da manhã.
+            Sejam persistentes!
+        </p>
+        <p class="util" id="p7">Essa avaliação foi útil?</p>
+        <ul class="like">
+            <a href="#"><li class="pos" id="ps7" onclick="checked('#p7',7)">pos</li></a>
+            <a href="#"><li class="neg" id="ng-7" onclick="checked('#p7',-7)">neg</li></a>
+        </ul>
+        <hr>
+    </div>
+
+    <div class="perfil">
+        <div><p>AK</p></div>
+    </div>
+    <div class="avaliation">
+        <h5>Adriano Knauth</h5>
+        <p class="n_star">★★★★★ <span class="tmp">&nbsp;há 17 horas</span></p>
+        <p class="comentario">
+            Robô ótimo, me trousse uma grande esperança no mercado e como uma aplicação funciona
+        </p>
+        <p class="util" id="p8">Essa avaliação foi útil?</p>
+        <ul class="like">
+            <a href="#"><li class="pos" id="ps8" onclick="checked('#p8',8)">pos</li></a>
+            <a href="#"><li class="neg" id="ng-8" onclick="checked('#p8',-8)">neg</li></a>
+        </ul>
+        <hr>
+    </div>
+
+    <div class="perfil">
+        <div><p>LO</p></div>
+    </div>
+    <div class="avaliation">
+        <h5>Lucas Oliveira</h5>
+        <p class="n_star">★★★☆☆ <span class="tmp">&nbsp;há 20 horas</span></p>
+        <p class="comentario">
+            O bot é bom, a didatica fica um pouco rasa
+            mas isso é normal visto que explicar tudo
+            nos minimos detalhes é inviavel então vc terá que fazer
+            muitas pesquisas. Outra coisa ruim é que os notícias ficam
+            desatualizados e eles não atualizam pra ajudar
+        </p>
+        <p class="util" id="p9">Essa avaliação foi útil?</p>
+        <ul class="like">
+            <a href="#"><li class="pos" id="ps9" onclick="checked('#p9',9)">pos</li></a>
+            <a href="#"><li class="neg" id="ng-9" onclick="checked('#p9',-9)">neg</li></a>
+        </ul>
+        <hr>
+    </div>
+
+    <div class="perfil">
+        <div class="perpro" id="user10"></div>
+    </div>
+    <div class="avaliation">
+        <h5>Raphael Barbosa</h5>
+        <p class="n_star">★★★☆☆ <span class="tmp">&nbsp;há 21 horas</span></p>
+        <p class="comentario">
+            O bot é muito bom na parte de enviar os melhores sinais,
+            ele aprofunda muito.
+            Acho que misturar muita coisa em um bot só foi ruim pois ao
+            invés de ajudar, complica. Em fim, acho que o bot quer usar
+            muita coisa e termina que confunde muito o usuário.
+        </p>
+        <p class="util" id="p10">Essa avaliação foi útil?</p>
+        <ul class="like">
+            <a href="#"><li class="pos" id="ps10" onclick="checked('#p10',10)">pos</li></a>
+            <a href="#"><li class="neg" id="ng-10" onclick="checked('#p10',-10)">neg</li></a>
+        </ul>
+        <hr>
+    </div>
+
+    <div class="perfil">
+        <div><p>SB</p></div>
+    </div>
+    <div class="avaliation">
+        <h5>Saulo Braga</h5>
+        <p class="n_star">★★★★★ <span class="tmp">&nbsp;há 22 horas</span></p>
+        <p class="comentario">
+            Muito bom, ganhei basta.. Não conhecia nada sobre opções binárias
+        </p>
+        <p class="util" id="p11">Essa avaliação foi útil?</p>
+        <ul class="like">
+            <a href="#"><li class="pos" id="ps11" onclick="checked('#p11',11)">pos</li></a>
+            <a href="#"><li class="neg" id="ng-11" onclick="checked('#p11',-11)">neg</li></a>
+        </ul>
+        <hr>
+    </div>
+
+    <div class="perfil">
+        <div><p>AM</p></div>
+    </div>
+    <div class="avaliation">
+        <h5>Alan MartinsAguiar</h5>
+        <p class="n_star">★★★★★ <span class="tmp">&nbsp;há 23 horas</span></p>
+        <p class="comentario">
+            Apesar das minhas dificuldades eu aprendo muito
+            com este bot e estou muito motivado para lucrar mais.
+        </p>
+        <p class="util" id="p12">Essa avaliação foi útil?</p>
+        <ul class="like">
+            <a href="#"><li class="pos" id="ps12" onclick="checked('#p12',12)">pos</li></a>
+            <a href="#"><li class="neg" id="ng-12" onclick="checked('#p12',-12)">neg</li></a>
+        </ul>
+    </div>
+
+    <div id="mais">
+        <a href="#" onclick="plus()"><p>Ver mais avaliações</p></a>
+    </div>
+</main>
+
+<footer>
+    © 2021 LoneSoft, Ltda.
+</footer>
+
+</body>
+</html>
+
+
+
+<script>
+    function checked(type,like){
+        document.querySelector(type).innerHTML = 'Agradecemos por enviar seu feedback';
+
+        if (like > 0) {
+            let unlike = like * -1;
+            document.querySelector('#ps'+like).style.backgroundColor = "#b4690e";
+            document.querySelector('#ng'+unlike).style.backgroundColor = "white";
+        } else {
+            let unlike = like * -1;
+            document.querySelector('#ps'+unlike).style.backgroundColor = "white";
+            document.querySelector('#ng'+like).style.backgroundColor = "#b4690e";
+        }
+    }
+
+    function plus(){
+        alert('Devido a enorme quantidade de acessos e avaliações, não é possível carregar os comentários no momento')
+    }
+</script>

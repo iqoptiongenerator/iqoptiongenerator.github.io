@@ -1,0 +1,261 @@
+body {
+    scroll-behavior: smooth;
+    margin: 0;
+    padding: 0;
+    font-family: sf pro text,-apple-system,BlinkMacSystemFont,Roboto,segoe ui,Helvetica,Arial,sans-serif,apple color emoji,segoe ui emoji,segoe ui symbol;
+}
+#capa {
+    background: #1c1d1f;
+    color: white;
+    padding-bottom: 1%;
+}
+
+a {
+    text-decoration: none;
+}
+
+#index {
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+
+    /*border: solid 1px gray; /*temporario*/
+}
+
+main {
+    margin-left: 10%;
+    margin-right: 10%;
+    margin-bottom: 10%;
+}
+
+#classificacao:before {
+    color: orange;
+    content: "4,2 ★★★★☆ ";
+}
+
+#classificacao:after {
+    text-decoration: underline;
+    color: cadetblue;
+    content: "(85.537 classificações)";
+}
+
+#n_buy {
+    content: " compras";
+    color: green;
+}
+
+#att:after {
+    content: " 09/2021";
+}
+
+#price:after {
+    content: " 59,99";
+}
+
+
+#hr_current {
+    color: crimson;
+}
+
+#produto_img {
+    padding-left: 21%;
+    width: 60%;
+}
+
+header {
+    background: #1c1d1f;
+    /*height: 400px;*/
+}
+
+header h1 {
+    margin: 0;
+    padding: 0;
+    text-align: center;
+}
+
+#comprar {
+    text-align: center;
+    font-weight: bold;
+
+    background-color: #a435f0;
+    padding-top: 10px;
+    padding-bottom: 10px;
+
+    text-decoration: none;
+    color: white;
+}
+
+.checklist {
+    list-style-image: url("https://img.icons8.com/material-outlined/16/000000/checked--v1.png");
+}
+
+.rectangle {
+    border: solid 1px lightgray;
+}
+
+#bloco {
+    width: 20%;
+    text-align: center;
+    color: #b4690e;
+    font-weight: bold;
+    float: left;
+    margin-top: 2%;
+}
+#bloco p {
+    margin: 0;
+}
+#bloco h1 {
+    margin: 0;
+}
+
+.star {
+    width: 80%;
+    padding: 0;
+}
+
+.bar {
+    background: lightgray;
+    height: 8px;
+}
+
+.n_star {
+    padding: 0;
+    color: #b4690e;
+    margin: 0;
+}
+
+#f5 {
+    background: gray;
+    width: 68%;
+}
+
+#f4 {
+    background: gray;
+    width: 24%;
+}
+
+#f3 {
+    background: gray;
+    width: 6%;
+}
+
+#f2 {
+    background: gray;
+    width: 1%;
+}
+
+
+#f1 {
+    background: gray;
+    width: 1%;
+}
+
+.p {
+    color: #5624d0;
+}
+
+.perfil {
+    float: left;
+    width: 10%
+}
+
+.perfil .perpro{
+    background-repeat: no-repeat;
+    background-size: 100%;
+    background-color: black;
+    width: 60px;
+    height: 60px;
+    border-radius: 60px;
+}
+
+#user1 {
+    background-image: url("https://cdn.pixabay.com/photo/2016/11/21/14/53/man-1845814_960_720.jpg");
+}
+
+#user6 {
+    background-image: url("https://cdn.pixabay.com/photo/2016/03/09/15/10/man-1246508_960_720.jpg");
+}
+
+#user10 {
+    background-image: url("https://cdn.pixabay.com/photo/2012/06/19/10/32/owl-50267_960_720.jpg");
+}
+
+.perfil div {
+    width: 60px;
+    height: 60px;
+    border-radius: 60px;
+    background-color: black;
+    color: white;
+    font-weight: bold;
+    text-align: center;
+}
+
+.perfil div p {
+    padding-top: 30%;
+    margin: 0;
+}
+
+.avaliation {
+    margin-left: 10%;
+    margin-right: 16%;
+    margin-bottom: 3%;
+}
+
+.avaliation h5 {
+    margin: 0;
+}
+.avaliation .comentario {
+    margin: 0;
+}
+
+.util {
+    font-weight: 5;
+}
+
+.like {
+    list-style: none;
+    padding: 0;
+}
+
+.like li{
+    display: inline;
+    width: 35px;
+    height: 35px;
+    border-radius: 35px;
+    border: solid 1px black;
+    text-indent: -999999px;
+}
+
+.like li.pos {
+    display: inline-block;
+    background: url("https://img.icons8.com/glyph-neue/64/000000/facebook-like.png") no-repeat center;
+    background-size: 32px;
+}
+
+.like li.neg {
+    display: inline-block;
+    background: url("https://img.icons8.com/ios-filled/24/000000/thumbs-down.png") no-repeat center;
+}
+
+.tmp {
+    color: grey;
+    font-size: 13px;
+}
+
+#mais {
+    height: 40px;
+    border: solid 1px black;
+}
+
+#mais p {
+    margin-top: 10px;
+    text-align: center;
+    font-weight: bold;
+}
+
+footer {
+    background: #1c1d1f;
+    height: 100px;
+    text-align: center;
+    color: white;
+}
